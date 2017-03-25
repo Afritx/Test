@@ -1,0 +1,216 @@
+$ mkdir desktop/myProject
+
+a01515094@ENG30105 MINGW64 ~
+$ cd desktop
+
+a01515094@ENG30105 MINGW64 ~/desktop
+$ cd myProject
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject
+$ dir
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject
+$ git init
+Initialized empty Git repository in C:/Users/labuser/Desktop/myProject/.git/
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ dir
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ help git
+bash: help: no help topics match `git'.  Try `help help' or `man -k git' or `inf                                                                                          o git'.
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ man -k git
+bash: man: command not found
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ pid
+bash: pid: command not found
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ poid
+bash: poid: command not found
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_rege                                                                                          x]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, com                                                                                          mand line)
+
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git config --global user.name "Joseph Ipson"
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git config --global user.email "ahrkelion@gmail.com"
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git config --global user.email "ahrkelion@gmail.com:"
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git config --global user.email "ahrkelion@gmail.com"
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ dir
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ dir
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ vim hi.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ vim readme.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git statys
+git: 'statys' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ vim readme.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ nano readme.txt
+bash: nano: command not found
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ gedit readme.txt
+bash: gedit: command not found
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ vi readme.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git add readme.txt
+warning: LF will be replaced by CRLF in readme.txt.
+The file will have its original line endings in your working directory.
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git add --all
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   readme.txt
+
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git commit --m "Add readme"
+[master (root-commit) 40ef1f1] Add readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git remote add origin https://github.com/afritx/Test.git
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/':
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git remote -v
+origin  https://github.com/afritx/Test.git (fetch)
+origin  https://github.com/afritx/Test.git (push)
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': afritx
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 236 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/afritx/Test.git
+ * [new branch]      master -> master
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ dir
+readme.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$ vim howtogit.txt
+
+a01515094@ENG30105 MINGW64 ~/desktop/myProject (master)
+$
